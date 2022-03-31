@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="container">
+    <span><b>Courses We Offer</b></span>
+  <div class="row">
+    <div *ngFor="let courses of course" class="col-3 card">
+      <img id="img" src="{{courses.imgUrl}}"><br>
+      <strong>{{courses.name}}</strong>
+      <p>{{courses.description}}</p>
+    </div>
+  </div>
+</div>

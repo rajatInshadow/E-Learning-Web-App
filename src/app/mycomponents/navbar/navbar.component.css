@@ -1,4 +1,10 @@
+.navBar{
+    background-color: rgb(5, 90, 62);
+    opacity: .8;
+}
+
 /* style for Name of website */
+
 .container-fluid a{
     color: rgb(245, 245, 245);
     font-size: 40px;
@@ -11,7 +17,7 @@
 
 /* Styles for all the navLinks */
 .navLinks {
-    color: rgba(3, 240, 122, 0.856);
+    color: rgb(26, 224, 52);
     font-style: italic;
     font-size: medium;
 }

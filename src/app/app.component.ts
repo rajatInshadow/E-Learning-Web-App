@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterState } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,17 +10,26 @@ import { RouterState } from '@angular/router';
 export class AppComponent {
   title = 'institute';
   public displayNavbar = false;
+  public currentRoute!: string;
+
+  constructor(private router: Router){
+    // console.log(this.displayNavbar);
+    // this.currentRoute=router.url;
+    
+    
+    // router.events.pipe(filter((event: any) => event instanceof NavigationEnd))
+    //       .subscribe((event: { url: string; }) => 
+    //        {
+    //           this.currentRoute = event.url;          
+    //           console.log(event.url);
+    //        });
 
 
-constructor(private routeService:RouterState){
+    //       if (router.url==this.currentRoute) {
+    //         this.displayNavbar = true;
+    //         console.log(this.displayNavbar);
+    //       }
 
-}
-
-public route
-
-
-onClick(){
-   
-}
-
+          
+        }
 }

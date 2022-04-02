@@ -8,6 +8,7 @@ import { NavbarComponent } from './mycomponents/navbar/navbar.component';
 import { HeaderComponent } from './mycomponents/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoursesService } from './service/courses.service';
+import { FooterComponent } from './mycomponents/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CoursesService } from './service/courses.service';
     NavbarComponent,
     HeaderComponent,
     routingComponents,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [CoursesService],

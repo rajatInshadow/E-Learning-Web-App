@@ -11,10 +11,13 @@
    margin: 10px;
    font-style: italic;
    font-family: 'Times New Roman', Times, serif;
+   font-size: 35px;
+   color:rgb(235, 11, 11);
 
 }
 .row{
     justify-content: center;
+    margin-bottom: 10px;
 }
 .card{
     background-color: lightgrey;

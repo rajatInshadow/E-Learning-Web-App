@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="container">
+<!-- <div class="container">
     <span><b>Courses We Offer</b></span>
   <div class="row">
     <div *ngFor="let courses of course" class="col-3 card">
@@ -8,4 +8,19 @@
       <p>{{courses.description}}</p>
     </div>
   </div>
+</div> -->
+
+<div class="container"><span><b>Courses We Offer</b></span>
+  <div class="card-group">
+    <div *ngFor="let courses of course"class="card">
+      <img src="{{courses.imgUrl}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{courses.name}}</h5>
+        <p class="card-text">{{courses.description}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
 </div>
+  
+  

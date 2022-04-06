@@ -15,15 +15,13 @@
    color:rgb(235, 11, 11);
 
 }
-.row{
-    justify-content: center;
-    margin-bottom: 10px;
-}
+
 .card{
     background-color: lightgrey;
     border: 1px solid black;
     margin-left: 5px;
     border-radius: 5px;
+    margin: 2rem;
 }
 
 #img{

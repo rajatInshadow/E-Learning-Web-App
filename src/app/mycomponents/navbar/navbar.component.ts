@@ -7,11 +7,12 @@ import { CoursesService } from 'src/app/service/courses.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
+
 export class NavbarComponent implements OnInit {
- public course!:Courses[];
-  constructor( private courseService:CoursesService) {}
+  public course!: Courses[];
+  constructor(private courseService: CoursesService) {}
 
   ngOnInit(): void {
-    this.course=this.courseService.getCourses();
+    this.course = this.courseService.getCourses();
   }
 }

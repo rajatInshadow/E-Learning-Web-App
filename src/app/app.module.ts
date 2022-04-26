@@ -9,6 +9,7 @@ import { HeaderComponent } from './mycomponents/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoursesService } from './service/courses.service';
 import { FooterComponent } from './mycomponents/footer/footer.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { FooterComponent } from './mycomponents/footer/footer.component';
     routingComponents,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [CoursesService],
   bootstrap: [AppComponent],
 })

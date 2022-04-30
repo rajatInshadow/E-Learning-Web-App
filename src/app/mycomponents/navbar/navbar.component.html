@@ -11,15 +11,17 @@
         <li class="nav-item">
           <span class="nav-link navLinks" routerLink="/home" routerLinkActive="active">Home</span>
         </li>
+
+        <!-- ----------------------------------------Courses DropDown starts here---------------------------------------------- -->
         <div  ngbDropdown class="">
           <div class="btn navLinks" id="dropdownButton" ngbDropdownToggle>Courses
           </div>
           <div   ngbDropdownMenu  aria-labelledby="dropdownBasic1" >
-            <div  *ngFor="let coruses of course" ngbDropdownItem class="dropdown-item">{{coruses.name}}</div>
-       
-         
+            <div  *ngFor="let coruses of course$ | async" ngbDropdownItem class="dropdown-item">{{coruses.name}}</div>
           </div>
         </div>
+        <!-- ----------------------------------------Courses DropDown ends here---------------------------------------------- -->
+
           <li class="nav-item ">
           <span class="nav-link navLinks" routerLink="/register" routerLinkActive="active">Link</span>
         </li>

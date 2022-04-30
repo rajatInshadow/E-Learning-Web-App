@@ -2,9 +2,9 @@
 
 
 <div class="container"><span><b>Courses We Offer</b></span>
-  <div class="card-group">
-    <div *ngFor="let courses of course"class="card">
-      <img src="{{courses.imgUrl}}" class="card-img-top" alt="...">
+  <div class="card-group" id="cardContent">
+    <div *ngFor="let courses of course$ | async"class="card">
+      <img src="{{courses.imgUrl}}" class="card-img-top" id="img" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{courses.name}}</h5>
         <p class="card-text">{{courses.description}}</p>

@@ -1,0 +1,15 @@
+.container{
+    background-color:rgb(64, 105, 105);
+}
+
+input{
+    background-color: bisque;
+}
+
+button{
+    background-color: lightblue;
+}
+
+input.ng-touched.ng-invalid{
+   border:  1px solid red;
+}

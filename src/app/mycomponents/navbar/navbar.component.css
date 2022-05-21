@@ -22,7 +22,7 @@
 }
 
 /* style for Login button */
-#login {
+#login, #register  {
     border: none;
     background: none;
 } 

@@ -15,5 +15,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.course$ = this.courseService.getCourses();
+    console.log(this.course$);
   }
 }

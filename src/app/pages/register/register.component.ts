@@ -1,15 +1,37 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent implements OnInit {
+  public flag:boolean=false;
+  registerForm!: FormGroup; //Give the same Formgroup name as in template
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) {
+    this.registerForm = this.formBuilder.group({ //Building the form using FormBuilder
+      firstName: new FormControl(),       //In the FormBuilder - we are creating a group of form elements
+      lastName: new FormControl(),        //these should be exactly same as form
+      emailAddress: ['',Validators.required],  
+      phoneNo: new FormControl(),
+      password: new FormControl(),
+      confirmPassword:new FormControl(),
+      Address: new FormControl(),
+      pincode: new FormControl()
+    });
 
-  ngOnInit(): void {
+     
   }
 
+  ngOnInit(): void {
+   
+  }
+
+  postData(){
+    console.log(this.registerForm);
+        console.log(this.registerForm.value);
+  }
+  
 }

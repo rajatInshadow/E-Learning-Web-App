@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './myComponent/courses/courses.component';
@@ -22,7 +22,14 @@ import {HttpClientModule} from '@angular/common/http'
     routingComponents,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    
+  ],
   providers: [CoursesService],
   bootstrap: [AppComponent],
 })

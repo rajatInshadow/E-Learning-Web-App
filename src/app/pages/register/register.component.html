@@ -75,10 +75,10 @@
       </div>
 
       <div class="col-6">
-        <label for="phoneNumber" class="col-sm-2 col-form-label">Pincode</label>
+        <label for="phoneNumber " class="col-sm-2 col-form-label">Pincode</label>
         <div class="col-sm-10">
           <input
-            type="number"
+            type="tel" 
             class="form-control"
             id="mobileNo"
             formControlName="pincode"
@@ -117,7 +117,7 @@
     </div>
     <div class="row">
       <div class="col-6 offset-5">
-        <button type="submit" class="btn mb-2">Sign Up</button>
+        <button type="submit" class="btn mb-2" [disabled]="!registerForm.valid">Sign Up</button>
       </div>
     </div>
   </form>
